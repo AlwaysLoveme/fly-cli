@@ -1,5 +1,5 @@
 {
-  "name": "fly-cli",
+  "name": "@zhuxian/fly",
   "version": "1.0.0",
   "description": "a node cli for create project with what you need",
   "main": "index.js",
@@ -7,7 +7,8 @@
     "@fly": "./bin/@fly-cli.js"
   },
   "files": [
-    "lib/**/*.js"
+    "lib",
+    "bin"
   ],
   "scripts": {
     "serve": "tsc --watch",

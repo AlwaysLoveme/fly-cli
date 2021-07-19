@@ -15,7 +15,7 @@
 
 #### Install
 ```
-npm i -g @fly-cli
+npm i -g @zhuxian/fly
 ```
 
 #### Usage
