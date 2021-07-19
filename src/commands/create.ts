@@ -28,7 +28,7 @@ const create = async (gitRepo: string, projectName: string): Promise<void> => {
   log.text(data, 'blod', true);
 
   // 创建下载模版项目
-  log.text("🚀The project name is: " + projectName + '\n');
+  log.text("🚀 The project name is: " + projectName + '\n');
   // eg: github:AlwaysLoveme/ionic-vue3#main
   await clone(gitRepo, projectName);
 

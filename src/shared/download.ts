@@ -6,7 +6,7 @@ import downloadGitRepo from "download-git-repo";
 const clone = async function (gitRepo: string, projectName: string) {
   const spin = new Spinner();
   const download = promisify(downloadGitRepo);
-  spin.start("⏬Creating Now");
+  spin.start("⏬ Creating Now");
   await download(gitRepo, projectName);
   return spin.done("Create Successfully!\n");
 }
