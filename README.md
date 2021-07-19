@@ -5,7 +5,7 @@
 
 · 微信公众号项目（Vue3.0 && Typescript && Framework7）
 
-· Vue3.0 WebPC项目（Typescript）
+· Vue3.0 WebPC项目（Typescript + Webpack5）
 
 · Vue3.0 Mobile项目（Typescript && Framework7）
 
