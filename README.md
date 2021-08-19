@@ -22,7 +22,7 @@ npm i -g @zhuxian/fly
 
 #### Usage
 ```
-@fly init
+@fly create
 ```
 
 #### Help

@@ -1,10 +1,10 @@
 /* eslint-disable @typescript-eslint/explicit-module-boundary-types */
-import Ora, { ora } from "ora";
+import Ora from "ora";
 
 export class Spinner {
-  instance!: ora.Ora;
+  instance!: Ora.Ora;
 
-  start(text: string): ora.Ora {
+  start(text: string): Ora.Ora {
     return this.instance = Ora({ color: 'green', text }).start();
   }
   done(text: string) {

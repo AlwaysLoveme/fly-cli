@@ -1,6 +1,6 @@
 {
   "name": "@zhuxian/fly",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "a node cli for create project with what you need",
   "main": "index.js",
   "bin": {
@@ -10,9 +10,18 @@
     "lib",
     "bin"
   ],
+  "keywords": [
+    "node",
+    "node-cli",
+    "template",
+    "vuejs",
+    "reactjs",
+    "wechat"
+  ],
   "scripts": {
     "serve": "tsc --watch",
     "build": "tsc",
+    "compile": "babel src --out-dir lib --extensions '.ts'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -26,6 +35,10 @@
   },
   "homepage": "https://github.com/AlwaysLoveme/fly-cli#readme",
   "devDependencies": {
+    "@babel/cli": "^7.14.8",
+    "@babel/core": "^7.14.8",
+    "@babel/preset-env": "^7.14.8",
+    "@babel/preset-typescript": "^7.15.0",
     "@types/chalk": "^2.2.0",
     "@types/clear": "^0.1.2",
     "@types/figlet": "^1.5.4",
@@ -39,7 +52,7 @@
   "dependencies": {
     "chalk": "^4.1.1",
     "clear": "^0.1.0",
-    "commander": "^8.0.0",
+    "commander": "^8.1.0",
     "download-git-repo": "^3.0.2",
     "exec-sh": "^0.2.2",
     "figlet": "^1.5.0",

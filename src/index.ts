@@ -1,7 +1,9 @@
 import inquirer from "inquirer";
 import pkg from "../package.json";
-import { program } from "commander";
+import { Command } from "commander";
 import { create } from "./commands/create";
+
+const program = new Command();
 
 enum Choices {
   wechat = "Wechat miniprogram(Vue3.0 + Typescript + Framework7-vue)",
@@ -14,9 +16,8 @@ enum Choices {
 
 program.version(pkg.version);
 program
-  .command("init")
+  .command("create")
   .description("create new project")
-  .option("")
   .action(async (cmd: any, options: Record<string, string>) => {
     const data = await inquirer.prompt([
       {
